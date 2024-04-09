@@ -1,11 +1,11 @@
 
-shopping price=[
-    30
-    50
-    25
-    20
+shopping=[
+    t-shirt,30
+    jeans, 50
+    pants, 25
+    cap, 20
 ]
-shopping things[
+shopping_things[
     t-shirt
     jeans
     pants
@@ -14,7 +14,7 @@ shopping things[
 money = input("How much money do you have?")
 while money != int
     money = input("please enter the amount of money you have again:")
-ptint (shopping_things)
+print (shopping.front())
 buy = input("what do you wanna buy?:")
 if true:
     if buy.lower()=="t-shirt"
