@@ -7,20 +7,26 @@ showing_list =[
 ]
 bought=[]
 money = int(input("How much money do you have?"))
-def Hugo():
+def Hugo(a):
     while True:
-        if money < 0:
-            money = int(input("The number is wrong, please enter the amount of money you have again:"))
-        elif 0<=money and money<20:
-            money=int(input("You don't have enough money to buy anything, so please enter your money again:"))
+        if a < 0:
+            a = int(input("The number is wrong, please enter the amount of money you have again:"))
+        elif 0<=a and a<20:
+            a=int(input("You don't have enough money to buy anything, so please enter your money again:"))
         else:
             break
-Hugo()
+Hugo(money)
 print (showing_list)
 buy=input("what do you wanna buy?, type it one by one.")
 while True: 
     while True:
-        if buy.lower()=="tshirt"or"jeans"or"pants"or"cap":
+        if buy.lower()==("tshirt"):
+            break
+        elif buy.lower()==("jeans"):
+            break
+        elif buy.lower()==("pants"):
+            break
+        elif buy.lower()==("cap"):
             break
         else:
             buy=input("We don't have that thing, please enter which thing do you want again:")
